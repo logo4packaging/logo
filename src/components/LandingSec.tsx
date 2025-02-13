@@ -6,7 +6,7 @@ const LandingSec = () => {
        sm:flex-row-reverse justify-center mx-auto p-10 sm:rounded-2xl  sm:mb-20"
       >
         <div className="sm:w-1/2">
-          <img className="  rounded-2xl" src="../../../public/i4.jpeg" alt="" />
+          <img className="  rounded-2xl" src="i4.jpeg" alt="" />
         </div>
         <div className="px-3 sm:w-1/2 m-auto">
           <h1 className=" text-4xl  md:text-5xl    xl:text-7xl dark:text-white text-center mt-7 font-bold sm:font-extrabold sm:text-right font-serif  ">
