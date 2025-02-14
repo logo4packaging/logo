@@ -2,6 +2,10 @@
 * {
   box-sizing: border-box;
   scroll: smooth;
+ 
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+body{
+  
+}

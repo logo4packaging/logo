@@ -64,7 +64,7 @@ export const productsOfPaper: IProducts[] = [
     id: uuidv4(),
     thickness: "جرام 30",
     numOfsheets: "15",
-    img: "",
+    img: "butter.jpg",
   },
   {
     name: "ورق مشجر ",
