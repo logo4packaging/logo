@@ -15,7 +15,7 @@ export default function App() {
 
   return (
     <>
-      <Header toggleDarkMode={toggleDarkMode} />
+      <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
       <LandingSec />
       <ProductsSec />
 

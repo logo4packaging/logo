@@ -12,7 +12,7 @@ const ProductCard = ({
   return (
     <div className="text-right gap-5 items-center text-xl" id={id}>
       <div>
-        <img className="max-w-full h-full mb-5" src={img} />
+        <img className="max-w-full h-full mb-5" src={img} loading="lazy" />
       </div>
       <div>
         <p className="text-2xl font-bold"> {name} :</p>

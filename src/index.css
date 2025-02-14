@@ -1,8 +1,7 @@
 @import "tailwindcss";
 * {
   box-sizing: border-box;
-  transition: 0.2s ease;
-  scroll: ease;
+  scroll: smooth;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));

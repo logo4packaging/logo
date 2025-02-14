@@ -8,8 +8,8 @@ import ProductCardsOfBubbles from "./ProductCardsOfBubbles";
 
 export default function ProductsSec() {
   return (
-    <div className="dark:bg-[#141516e3]">
-      <div className="flex sm:w-[80%] flex-col w-full justify-center mt-10 px-4 container m-auto ">
+    <div className="dark:bg-[#141516] dark:text-white">
+      <div className="flex sm:w-[80%] flex-col w-full justify-center pt-10 px-4 container m-auto ">
         <h1 className="text-center border-b-3 pb-2 w-fit mb-5 text-3xl font-bold m-auto">
           المنتجات
         </h1>
@@ -20,7 +20,7 @@ export default function ProductsSec() {
                 (tab, index) => (
                   <Tab
                     key={index}
-                    className="data-[selected]:border-b-3 border-black py-1 mx-1 sm:mx-3 flex flex-wrap text-xl sm:text-2xl font-semibold text-black focus:outline-none 
+                    className=" dark:text-white dark:data-[selected]:bg-transparent dark:data-[hover]:bg-transparent dark:border-white dark:data-[selected]:bg- data-[selected]:border-b-3 border-black py-1 mx-1 sm:mx-3 flex flex-wrap text-xl sm:text-2xl font-semibold text-black focus:outline-none 
                 data-[selected]:bg-white/10 data-[hover]:bg-white/5 data-[selected]:data-[hover]:bg-white/10 
                 data-[focus]:outline-1 data-[focus]:outline-black hover:cursor-pointer  "
                   >
