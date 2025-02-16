@@ -5,6 +5,8 @@ import ProductCardsOfFoam from "./ProductCardsOfFoam";
 import ProductCardsOfStretch from "./ProductCardsOfStretch";
 import ProductCardsOfString from "./ProductCardsOfString";
 import ProductCardsOfBubbles from "./ProductCardsOfBubbles";
+import ProductCardsOfTaps from "./ProductCardsOfTaps";
+import ProductCardsOfCarton from "./ProductCardsOfCarton";
 
 export default function ProductsSec() {
   return (
@@ -16,12 +18,12 @@ export default function ProductsSec() {
         <div className="w-full">
           <TabGroup>
             <TabList className="flex  justify-center mb-12 ">
-              {["الكل", "ورق", "لصق", "استرتش", "فوم", "بابلز", "خيط"].map(
+              {["الكل", "ورق", "كرتون","سلوتيب", "استرتش", "فوم", "بابلز", "خيط"].map(
                 (tab, index) => (
                   <Tab
                     key={index}
-                    className=" dark:text-white dark:data-[selected]:bg-transparent dark:data-[hover]:bg-transparent dark:border-white dark:data-[selected]:bg- data-[selected]:border-b-3 border-black py-1 mx-1 sm:mx-3 flex flex-wrap text-xl sm:text-2xl font-semibold text-black focus:outline-none 
-                data-[selected]:bg-white/10 data-[hover]:bg-white/5 data-[selected]:data-[hover]:bg-white/10 
+                    className=" dark:text-white dark:data-[selected]:bg-transparent dark:data-[hover]:bg-transparent dark:border-white   data-[selected]:border-b-3 border-black py-1 mx-1 sm:mx-3 flex flex-wrap text-xl sm:text-2xl font-semibold text-black focus:outline-none 
+                    
                 data-[focus]:outline-1 data-[focus]:outline-black hover:cursor-pointer  "
                   >
                     {tab}
@@ -37,9 +39,10 @@ export default function ProductsSec() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3 }}
-                  className="rounded-xl"
+                  className=" flex flex-col gap-4"
                 >
                   <ProductCardsOfPaper />
+                  <ProductCardsOfCarton/>
                   <ProductCardsOfFoam />
                   <ProductCardsOfStretch />
                   <ProductCardsOfString />
@@ -59,7 +62,7 @@ export default function ProductsSec() {
                 </motion.div>
               </TabPanel>
 
-              {/* تبويب استرتش */}
+             
               <TabPanel>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -68,7 +71,18 @@ export default function ProductsSec() {
                   transition={{ duration: 0.3 }}
                   className="rounded-xl"
                 >
-                  <p className="text-center text-lg font-semibold">لثصق</p>
+                  <ProductCardsOfCarton/>
+                </motion.div>
+              </TabPanel>
+              <TabPanel>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.3 }}
+                  className="rounded-xl"
+                >
+                  <ProductCardsOfTaps/>
                 </motion.div>
               </TabPanel>
 

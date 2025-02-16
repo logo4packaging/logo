@@ -1,43 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
-import type {  IProducts } from "../interfaces";
+import type { IProducts } from "../interfaces";
 
-export const productsOfFoam: IProducts[] = [
-  {
-    name: "فوم ",
-    size: [],
-    id: uuidv4(),
-    thickness: "1م",
-    img: "foam.jpeg",
-  },
-  {
-    name: "فوم ",
-    size: [],
-    id: uuidv4(),
-    thickness: "2م",
-    img: "foam.jpeg",
-  },
-  {
-    name: "فوم ",
-    size: [],
-    id: uuidv4(),
-    thickness: "1سم",
-    img: "foam.jpeg",
-  },
-  {
-    name: "فوم ",
-    size: [],
-    id: uuidv4(),
-    thickness: "12م",
-    img: "foam.jpeg",
-  },
-  {
-    name: "لوح فوم",
-    size: [],
-    id: uuidv4(),
-    thickness: "2سم",
-    img: "foam.jpeg",
-  },
-];
 export const productsOfPaper: IProducts[] = [
   {
     name: "كرافت ازرق اسبانى",
@@ -55,15 +18,15 @@ export const productsOfPaper: IProducts[] = [
     id: uuidv4(),
     thickness: "جرام 80",
     numOfsheets: "10",
-    img: "",
+    img: "asmanty.jpg",
   },
   {
     name: "كرافت ورق زبده",
     details: " ورق للرش و عازل للحرارة و يمنع تماسك الدهان بالورق",
-    size: [""],
+    size: ["130x1م"],
     id: uuidv4(),
     thickness: "جرام 30",
-    numOfsheets: "15",
+    numOfsheets: "20",
     img: "butter.jpg",
   },
   {
@@ -87,11 +50,11 @@ export const productsOfPaper: IProducts[] = [
   {
     name: "كرافت رمادى",
     details: " ",
-    size: ["140x1م"],
+    size: ["130x1م"],
     id: uuidv4(),
     thickness: "جرام 60",
-    numOfsheets: "",
-    img: "",
+    numOfsheets: "12",
+    img: "gray.jpg",
   },
   {
     name: "كرافت سكر",
@@ -126,9 +89,36 @@ export const productsOfPaper: IProducts[] = [
     details: "فضى",
     size: [" 145x1م"],
     id: uuidv4(),
-    thickness: "جرام 110",
-    numOfsheets: "4",
+    thickness: "جرام 40",
+    numOfsheets: "8",
     img: "life.jpg",
+  },
+  {
+    name: "ورق امريكى",
+    details: "شغل تصدير",
+    size: [" 130x1م"],
+    id: uuidv4(),
+    thickness: "جرام 140",
+    numOfsheets: "4",
+    img: "american.jpg",
+  },
+  {
+    name: "ورق برازيلى",
+    details: "",
+    size: [" 130x1م"],
+    id: uuidv4(),
+    thickness: "جرام 80",
+    numOfsheets: "8",
+    img: "brazilian.jpg",
+  },
+  {
+    name: "ورق المانى ابيض",
+    details: "شغل تصدير",
+    size: [" 130x1م"],
+    id: uuidv4(),
+    thickness: "جرام 60",
+    numOfsheets: "12",
+    img: "whiteGermany.jpg",
   },
 ];
 
@@ -152,37 +142,89 @@ export const productsOfBubbles: IProducts[] = [
     id: uuidv4(),
     img: "bubbles.jpg",
     name: "بابلز",
-  } 
+  },
 ];
 export const productsOfString: IProducts[] = [
   {
     id: uuidv4(),
     img: "mdString.jpg",
-    name: "خيط",
+    name: " خيط",
     details: "متوسط",
   },
   {
-    details: "",
+    details: "صغير",
     id: uuidv4(),
     img: "smString.jpg",
     name: "خيط",
   },
   {
-    details: "",
+    details: "كبير",
     id: uuidv4(),
     img: "bigString.jpg",
     name: "خيط",
   },
   {
-    details: "",
+    details: "جامبو",
     id: uuidv4(),
     img: "ultraString.jpg",
     name: "خيط",
   },
   {
-    details: "",
+    details: "صوف",
     id: uuidv4(),
     img: "minString.jpg",
     name: "خيط",
+  },
+];
+export const productsOfFoam: IProducts[] = [
+  {
+    name: "فوم ",
+
+    id: uuidv4(),
+    thickness: "1م",
+    img: "foam-1m.jpg",
+  },
+  {
+    name: "فوم ",
+
+    id: uuidv4(),
+    thickness: "2م",
+    img: "foam-2m.jpg",
+  },
+  {
+    name: "فوم ",
+
+    id: uuidv4(),
+    thickness: "1سم",
+    img: "foam-1cm.jpg",
+  },
+  {
+    name: "فوم ",
+
+    id: uuidv4(),
+    thickness: "12ملم",
+    img: "foam-12m.jpg",
+  },
+  {
+    name: "لوح فوم",
+
+    id: uuidv4(),
+    thickness: "2سم",
+    img: "foam-2cm.jpg",
+  },
+];
+export const productsOfTaps: IProducts[] = [
+  {
+    id: uuidv4(),
+    img: "tap-1.jpg",
+    name: "سلوتيب الكريستال",
+    size: ["40, 60, 80, 100, 150, 200, 300 يارده"],
+  },
+];
+export const productsOfCarton: IProducts[] = [
+  {
+    id: uuidv4(),
+    img: " carton.jpg",
+    name: " كارتون",
   },
 ];
