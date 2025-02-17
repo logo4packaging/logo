@@ -225,6 +225,6 @@ export const productsOfCarton: IProducts[] = [
   {
     id: uuidv4(),
     img: " carton.jpg",
-    name: " كارتون",
+    name: " كرتون",
   },
 ];
